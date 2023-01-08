@@ -14,7 +14,8 @@
 // • Rasel comel
 // • Oscar-Md
 // • Rismabot offc
-// • Dll
+// • Glospot Ofc
+// • Dll 
 
 //[!] Jangan Lupa Ganti Ownernya
 
@@ -47,37 +48,37 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/Jarotr_' //Link Instagrammu
-global.sgh = 'https://github.com/Alpiii22' //Link Githubmu
-global.sgc = 'https://chat.whatsapp.com/GPMdyM0uDMP789G3IGMHda'
-global.sdc = '_'
-global.stg = 'https://instagram.com/Jarotr_'
-global.syt = 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ' //Isi Pake Link Discordmu Kalo Gada Biarin aja
+global.sig = 'https://instagram.com/glospotbotz?igshid=YmMyMTA2M2Y=' //Link Instagrammu
+global.sgh = 'https://github.com/Glospot' //Link Githubmu
+global.sgc = 'https://chat.whatsapp.com/J6POxXuf46W49ro3aBnvaQ'
+global.sdc = 'https://instagram.com/glospotbotz?igshid=YmMyMTA2M2Y='
+global.stg = 'https://instagram.com/glospotbotz?igshid=YmMyMTA2M2Y='
+global.syt = 'https://youtube.com/c/GLOSPOTofficial' //Isi Pake Link Discordmu Kalo Gada Biarin aja
 global.snh = 'https://nhentai.net/g/HaramTod🗿' //Hmmm, Ini boleh kalian isi terserah :v
 
 /*============== PAYMENT ==============*/
-global.pdana = '085850539404' //Nomor Danamu
-global.ppulsa = '085850539404' //Nomor SimCard Yang Kamu Pake
-global.psaweria = 'https://saweria.com/jarotoffc' //Link Saweriamu Kalo Nggada Ketik - aja
+global.pdana = '082340108349' //Nomor Danamu
+global.ppulsa = '082340108349' //Nomor SimCard Yang Kamu Pake
+global.psaweria = 'https://saweria.com/Glospot' //Link Saweriamu Kalo Nggada Ketik - aja
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6281376349712' //Nomor Bot
-global.nomorown = '6285850539404' //Nomor Owner
-global.namebot = 'OSCAR-MULTIDEVICE'  //Nama Bot
-global.nameown = 'Oscar Offc'  // Nama Owner
+global.nomorbot = '6285391576039' //Nomor Bot
+global.nomorown = '6282340108349' //Nomor Owner
+global.namebot = 'GLOSPOT-MULTIDEVICE'  //Nama Bot
+global.nameown = 'GLOSPOT✓'  // Nama Owner
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285850539404', '❦ Oscar 🎐', true] //Ganti jd nomormu sama Namamu
+  ['6282340108349', '❦ GLOSPOT 🎐', true] //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
 
-global.lolkey = 'apikeymu'
-global.xkey = 'APIKEYMU'
+global.lolkey = '8e66d0934cf741bfd2182c16'
+global.xkey = 'b8040941f7'
 /*============== API ==============*/
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -101,9 +102,9 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 OSCAR-MULTIDEVICE 汉  」' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Oscar-Md˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺  OSCAR-MD'
+global.wm = '                「 GLOSPOT-MD 汉  」' //Main Watermark
+global.wm2 = 'GLOSPOT-MD'
+global.wm3 = '⫹⫺  GLOSPOT-MD'
 global.botdate = `⫹⫺ 𝗛𝗮𝗿𝗶: ${week} ${date}`
 global.bottime = `𝗪𝗮𝗸𝘁𝘂 : ${wktuwib}`
 global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
@@ -113,9 +114,9 @@ global.logo = 'https://ibb.co/17RY7x9'
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/0c6ff83f2adbcf4693314.gif' //Main Thumbnail
-global.thumb2 = 'https://telegra.ph/file/26b515d170f1e599f78a7.jpg'
-global.thumbbc = 'https://telegra.ph/file/05f874dc87f7e27fa8127.jpg' //For broadcast
+global.thumb = 'https://telegra.ph/file/9e86a04a5fdfdad8ddeb0.jpg' //Main Thumbnail
+global.thumb2 = 'https://telegra.ph/file/9e86a04a5fdfdad8ddeb0.jpg'
+global.thumbbc = 'https://telegra.ph/file/9e86a04a5fdfdad8ddeb0.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1598c29a621.jpg',
 'https://i.pinimg.com/originals/85/4d/bb/854dbbd30304cd69f305352f0183fad0.jpg',
@@ -369,10 +370,10 @@ global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = '.'
-global.stickauth = `☂︎\nO\nS\nC\nR\nO\nF\C-\n𝗕\n𝗢\n𝗧\n✦\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
-global.packname = 'Cʀᴇᴀᴛᴇᴅ Bʏ'
-global.packname2 = 'ᴄʀᴇᴀᴛᴇᴅ ʙʏ OSCAR'
+global.stickpack = '𝙶𝙻𝙾𝚂𝙿𝙾𝚃-𝙼𝙳|𝙵𝙾𝙻𝙻𝙾𝚆 𝙸𝙶 𝙶𝙻𝙾𝚂𝙿𝙾𝚃𝙱𝙾𝚃𝚉'
+global.stickauth = `☂︎\nG\nL\nO\nS\nP\nO\nT\nB\nO\nT\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
+global.packname = '𝙶𝙻𝙾𝚂𝙿𝙾𝚃-𝙼𝙳|𝙵𝙾𝙻𝙻𝙾𝚆 𝙸𝙶 𝙶𝙻𝙾𝚂𝙿𝙾𝚃𝙱𝙾𝚃𝚉'
+global.packname2 = '𝙶𝙻𝙾𝚂𝙿𝙾𝚃-𝙼𝙳|𝙵𝙾𝙻𝙻𝙾𝚆 𝙸𝙶 𝙶𝙻𝙾𝚂𝙿𝙾𝚃𝙱𝙾𝚃𝚉'
 
 global.multiplier = 38 // The higher, The harder levelup
 
