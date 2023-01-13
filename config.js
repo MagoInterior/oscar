@@ -371,7 +371,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
 global.stickpack = '𝙶𝙻𝙾𝚂𝙿𝙾𝚃-𝙼𝙳|𝙵𝙾𝙻𝙻𝙾𝚆 𝙸𝙶 𝙶𝙻𝙾𝚂𝙿𝙾𝚃𝙱𝙾𝚃𝚉'
-global.stickauth = `☂︎\nG\nL\nO\nS\nP\nO\nT\nB\nO\nT\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
+global.stickauth = `☂︎\nG\nL\nO\nS\nP\nO\nT\nB\nO\nT\nZ\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
 global.packname = '𝙶𝙻𝙾𝚂𝙿𝙾𝚃-𝙼𝙳|𝙵𝙾𝙻𝙻𝙾𝚆 𝙸𝙶 𝙶𝙻𝙾𝚂𝙿𝙾𝚃𝙱𝙾𝚃𝚉'
 global.packname2 = '𝙶𝙻𝙾𝚂𝙿𝙾𝚃-𝙼𝙳|𝙵𝙾𝙻𝙻𝙾𝚆 𝙸𝙶 𝙶𝙻𝙾𝚂𝙿𝙾𝚃𝙱𝙾𝚃𝚉'
 
