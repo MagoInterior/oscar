@@ -13,7 +13,7 @@ let cap = `${ucapan()}\n\nNih ${name}\nCara Simpan\n\n1. Download Dulu Vidio Nya
 conn.sendFile(m.chat, x.link, 'tiktok.mp4', cap, m)
 }
 handler.tags = ['downloader']
-handler.command = /^(downloadertiktok)$/i
+handler.command = /^(tiktok)$/i
 handler.limit = true
 
 export default handler
