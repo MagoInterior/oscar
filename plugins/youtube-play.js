@@ -37,14 +37,14 @@ export default handler */
 import fetch from 'node-fetch'
 import { youtubeSearch } from '@bochilteam/scraper'
 let handler = async (m, { conn, groupMetadata, usedPrefix, text, args, command }) => {
-let fdoc = {quoted:{key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `${command}`}}}}
-//try {
+try {
   if (!text) throw `Use example ${usedPrefix}${command} gustixa`
   let vid = (await youtubeSearch(text)).video[0]
+  await m.reply(`*_${md} @${m.sender.split(`@`)[0]}..._*`)
   if (!vid) throw 'Video/Audio Tidak ditemukan'
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
   const url = 'https://www.youtube.com/watch?v=' + videoId
-  let jarot = `*${htki} PLAY ${htka}*
+  let whmodsdev = `*${htki} PLAY ${htka}*
 
   📌 *Title:* ${title}
 🔗 *Url:* ${url}
@@ -54,13 +54,12 @@ let fdoc = {quoted:{key : {participant : '0@s.whatsapp.net'},message: {documentM
 ⌚ *Duration:* ${durationH}
 👁️ *Views:* ${viewH}
   `
-  await conn.sendButton(m.chat, jarot, wm, thumbnail, [
+  await conn.sendButton(m.chat, whmodsdev, wm, botdate, [
     ['🎶 Audio', `${usedPrefix}yta ${url} yes`],
     ['🎥 Video', `${usedPrefix}ytv ${url} yes`],
     ['🔎 Youtube Search', `${usedPrefix}yts ${text}`]
 ], m, fdoc)
-//} 
-/* catch {
+} catch {
 if (!text) throw 'Input Query'
   let vid = (await youtubeSearch(text)).video[0]
   if (!vid) throw 'Video/Audio Tidak Ditemukan'
@@ -81,7 +80,7 @@ if (!text) throw 'Input Query'
   let msg = await conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: capt, footer: '_Audio on progress..._', buttons }, { quoted: m })
   // if (durationS > 4000) return conn.sendMessage(m.chat, { text: `*Download:* ${await shortUrl(ytLink)}\n\n_Duration too long..._` }, { quoted: msg })
   conn.sendMessage(m.chat, { audio: { url: ytLink }, mimetype: 'audio/mpeg' }, { quoted: msg })
-} */
+}
 
 }
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
@@ -89,7 +88,7 @@ handler.tags = ['downloader', 'limitmenu']
 handler.command = /^play2?$/i
 
 handler.exp = 0
-handler.limit = true
+handler.limit = false
 handler.register = true
 
 export default handler
@@ -100,3 +99,4 @@ async function shortUrl(url) {
   if (!res.ok) throw false
   return await res.text()
 }
+
