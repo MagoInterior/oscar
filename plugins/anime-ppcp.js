@@ -1,13 +1,15 @@
 import fetch from 'node-fetch'
-let handler = async (m, { conn, command }) => {
-let res = await fetch(`https://api.lolhuman.xyz/api/random/ppcouple?apikey=apikeymu`)
-if (res.status != 200) throw await res.text()
-let json = await res.json()
-if (!json.status) throw json
-conn.sendButton(m.chat, '𝙶𝚒𝚛𝚕𝚜', wm, json.result.female,[['NEXT', `/${command}`]], m)
-conn.sendButton(m.chat, '𝙱𝚘𝚢𝚜', wm, json.result.male, [['NEXT', `/${command}`]], m)
+let handler = async (m, { conn, usedPrefix, command }) => {
+let anu = await fetch('https://api.akuari.my.id/randomimage/ppcouple')
+let url = await anu.json()
+let { hasil } = url 
+let weem = 'PutraModz'
+m.reply(wait)
+await conn.sendButton(m.chat, 'Lanang', weem, hasil.cowok, [['⇄ Next ⇄', `${usedPrefix + command}`]], m)
+await conn.sendButton(m.chat, 'Woman', weem, hasil.cewek, [['⇄ Next ⇄', `${usedPrefix + command}`]], m)
 }
-handler.help = ['ppcouple']
+handler.help = ['ppcp']
 handler.tags = ['internet']
-handler.command = /^(ppcp|ppcouple)$/i
+handler.command = /^(ppcp)$/i
+
 export default handler
