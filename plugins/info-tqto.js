@@ -56,16 +56,16 @@ https://github.com/FahriAdison
 *❉ Glospot:*
 https://github.com/Glospot [Recode]
 *▸ - - - —「 Penulis Ulang 」— - - - ◂*
-*❉ ImYanXiao:*
-https://github.com/ImYanXiao
+*❉ Oscar-Md*
+https://github.com/Alpiii22 
 *▸ - - - —「 Thanks For Suhu 」— - - - ◂*
 *❉ Kannachan:*
-*❉ ImYanXiao:*
 *❉ The.sadboy.01*
 *❉ Papah-Chan:*
 *❉ Johannes:*
 *❉ Jarot:*
 *❉ Krisna:*
+*❉ Oscar-Md:*
 *❉ Glospot-Md:*
 
 `
