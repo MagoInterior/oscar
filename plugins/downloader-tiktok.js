@@ -8,7 +8,7 @@ let name = await conn.getName(who)
   let res = await fetch(`https://api.lolhuman.xyz/api/tiktok?apikey=Cahyodev&url=${text}`)
   let res2 = await res.json()
   let x = res2.result
-  await m.reply(`*_${global.wait}_*`)
+  await m.reply(`${global.wait}`)
 let cap = `${ucapan()}\n\nNih ${name}\nCara Simpan\n\n1. Download Dulu Vidio Nya Kalau Sudah\n2. Masuk Ke Dalam Vidio Nya\n3. Lalu Tekan Titik3 Pojok Kanan Atas\n4. Lalu Pilih Yang Ada Bacaan  Simpan `
 conn.sendFile(m.chat, x.link, 'tiktok.mp4', cap, m)
 }
