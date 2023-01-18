@@ -12,7 +12,7 @@ let name = await conn.getName(who)
 let cap = `${ucapan()}\n\nNih ${name}\nCara Simpan\n\n1. Download Dulu Vidio Nya Kalau Sudah\n2. Masuk Ke Dalam Vidio Nya\n3. Lalu Tekan Titik3 Pojok Kanan Atas\n4. Lalu Pilih Yang Ada Bacaan  Simpan `
 conn.sendFile(m.chat, x.link, 'tiktok.mp4', cap, m)
 }
-handler.tags = ['downloader']
+handler.tags = ['.? downloader']
 handler.command = /^(tiktok)$/i
 handler.limit = true
 
