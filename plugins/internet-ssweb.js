@@ -8,7 +8,7 @@ let handler = async (m, { conn, command, args }) => {
    let img = await (await fetch(`https://saipulanuar.ga/api/download/ssweb?url=${args[0]}&full_page=true&fresh=true&output=image&file_type=png&wait_for_event=load`)).buffer()
 
   
-   conn.sendMessage(m.chat, { image: img, caption: 'Here' }, { quoted: m })
+   conn.sendMessage(m.chat, { image: img, caption: 'Done🔎' }, { quoted: m })
 }
 handler.help = ['ssweb']
 handler.tags = ['internet']
