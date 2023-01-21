@@ -49,7 +49,7 @@ else conn.sendButton(m.chat, `Anda Sudah Berdagang , tunggu ${timers} lagi..`,wm
 handler.help = ['berdagang *@tag*']
 handler.tags = ['rpg']
 handler.command = /^berdagang$/
-handler.limit = true
+handler.limit = false
 handler.group = true
 
 export default handler 
