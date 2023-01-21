@@ -117,7 +117,7 @@ global.logo = 'https://ibb.co/17RY7x9'
 global.thumb = 'https://telegra.ph/file/9e86a04a5fdfdad8ddeb0.jpg' //Main Thumbnail
 global.thumb2 = 'https://telegra.ph/file/9e86a04a5fdfdad8ddeb0.jpg'
 global.thumbbc = 'https://telegra.ph/file/9e86a04a5fdfdad8ddeb0.jpg' //For broadcast
-global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
+global.giflogo = 'https://telegra.ph/file/e27ea9e6f8d498ec5adc9.jpg'
 global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1598c29a621.jpg',
 'https://i.pinimg.com/originals/85/4d/bb/854dbbd30304cd69f305352f0183fad0.jpg',
 'https://i.pinimg.com/originals/32/2c/a4/322ca456fa2cdec4b717895a65adfa8d.jpg',
