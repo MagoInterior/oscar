@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
 let name = await conn.getName(who)
-  let res = await fetch(`https://saipulanuar.ga/api/download/tiktok?url=https://vt.tiktok.com/ZSJhvu1AE/&apikey=APIKEY${text}`)
+  let res = await fetch(`https://api.lolhuman.xyz/api/tiktok?apikey=Cahyodev&url=${text}`)
   let res2 = await res.json()
   let x = res2.result
   await m.reply(`${global.wait}`)
