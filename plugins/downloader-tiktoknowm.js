@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command, args }) => {
    if (!args[0]) return m.reply(`Masukan Url TikTok !`)
-   let rest = await fetch(`https://malesin.xyz/tiktok?url=${args[0]}`)
+   let rest = await fetch(`https://api.vhtear.com/tiktok_no_wm?link=https://www.tiktok.com/@goodponsel/video/6913737919450729729&apikey=APIKEY=${args[0]}`)
    let res = await rest.json()
    let { title, author, video, audio, videoWM } = res
    let kon = `${title}
