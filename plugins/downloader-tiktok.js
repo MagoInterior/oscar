@@ -13,8 +13,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         ['ᴅᴏɴᴀꜱɪ', `.donasi`],
         ['ᴀᴜᴅɪᴏ', `.tiktokaudio ${args}`], m)
 }
-handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
+handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(t(ik)t(ok))$/i
 
-export default handler
+exports default handler
