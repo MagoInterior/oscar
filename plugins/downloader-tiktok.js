@@ -1,20 +1,37 @@
-import { tiktokdl, tiktokdlv2, tiktokdlv3 } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
-
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.tiktok.com/@omagadsus/video/7025456384175017243`
-    const { author: { nickname }, video, description } = await tiktokdl(args[0])
-        .catch(async _ => await tiktokdlv2(args[0]))
-        .catch(async _ => await tiktokdlv3(args[0]))
-    const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
-    if (!url) throw 'Can\'t download video!'
-    conn.sendFile(m.chat, `${htki} ᴛɪᴋᴛᴏᴋ ᴡᴍ ${htka}`, `➔ ɴɪᴄᴋɴᴀᴍᴇ ${nickname}${description ? `\n➔ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:\n${description}` : ''}`, await
-        [
-        ['ᴅᴏɴᴀꜱɪ', `.donasi`],
-        ['ᴀᴜᴅɪᴏ', `.tiktokaudio ${args}`], m)
+import fs from 'fs'
+import moment from 'moment-timezone'
+let handler = async (m, { conn, usedPrefix, command, text }) => {
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
+let name = await conn.getName(who)
+  let res = await fetch(`https://saipulanuar.ga/api/download/tiktok?url=https://vt.tiktok.com/ZSJhvu1AE/&apikey=APIKEY=${text}`)
+  let res2 = await res.json()
+  let x = res2.result
+  await m.reply(`${global.wait}`)
+let cap = `${ucapan()}\n\nNih ${name}\nCara Simpan\n\n1. Download Dulu Vidio Nya Kalau Sudah\n2. Masuk Ke Dalam Vidio Nya\n3. Lalu Tekan Titik3 Pojok Kanan Atas\n4. Lalu Pilih Yang Ada Bacaan  Simpan `
+conn.sendFile(m.chat, x.link, 'tiktok.mp4', cap, m)
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^(t(ik)t(ok))$/i
+handler.command = /^(tiktok)$/i
+handler.limit = false
 
-exports default handler
+export default handler
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  let res = "Kok Belum Tidur Kak? 🥱"
+  if (time >= 4) {
+    res = "Pagi Cuy 🌄"
+  }
+  if (time >= 10) {
+    res = "Siang Cuy ☀️"
+  }
+  if (time >= 15) {
+    res = "Sore Cuy 🌇"
+  }
+  if (time >= 18) {
+    res = "Malam Cuy 🌙"
+  }
+  return res
+}
