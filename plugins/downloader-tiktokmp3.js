@@ -54,7 +54,7 @@ const time = moment.tz('Asia/Jakarta').format('HH')
                         mediaType: 2,
                         description: 'anu',
                         title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `Kontol:v hehe`,                                       previewType: 0,
+                        body: `GLOSPOT-MD`,                                       previewType: 0,
                         thumbnail: await (await fetch(`https://telegra.ph/file/9e86a04a5fdfdad8ddeb0.jpg`)).buffer(),
                         sourceUrl: 'https://youtu.be/ALQiRR1nzLI'
             }
