@@ -4,7 +4,7 @@ import axios from 'axios'
 let handler = async (m, { conn, args, text, command, usedPrefix }) => {
 let tag = `@${m.sender.replace(/@.+/, '')}`
   let mentionedJid = conn.parseMention(tag)
-  if (!args[0]) throw `Gunakan format: ${usedPrefix}${command} https://tiktok.com/Omagus`
+  if (!args[0]) throw `Gunakan format: ${usedPrefix}${command} https://tiktok.com/xxxx`
 try {
 let res = await fetch(`https://saipulanuar.ga/api/download/tiktok?url=${args[0]}`)
 let data = await res.json()
@@ -13,7 +13,7 @@ let json = data.result
 let view = await fetch(`https://saipulanuar.ga/api/download/tiktokview?url=${args[0]}`)
 let don = await view.json()
 let jsoon = don.result
-let done = `PowerBy : ${jsoon.author}\n┆➵ Play : ${jsoon.playCount}\n┆➵ Publish : ${jsoon.createdAt}\n┆➵ Likes : ${jsoon.likesCount}\n┆➵ Command : ${jsoon.commentCount}\n┆➵ Shares : ${jsoon.shareCount}\n⟡ ━━┄┄┄┈┈┈\nDescription:\n${jsoon.description}`
+let done = `▣\n┆➵ Author : ${jsoon.author}\n┆➵ Play : ${jsoon.playCount}\n┆➵ Publish : ${jsoon.createdAt}\n┆➵ Likes : ${jsoon.likesCount}\n┆➵ Command : ${jsoon.commentCount}\n┆➵ Shares : ${jsoon.shareCount}\n⟡ ━━┄┄┄┈┈┈\nDescription:\n${jsoon.description}`
 conn.reply(m.chat, 'Proses', m)
 await conn.sendHydrated2(m.chat, `Done` + ' ' + tag, done, json.video, 'https://instagram.com/GlospotBotz', 'ɪ ɴ s ᴛ ᴀ ɢ ʀ ᴀ ᴍ', 'https://youtube.com/@GLOSPOTofficial', 'ʏ ᴏ ᴜ ᴛ ᴜ ʙ ᴇ', [['Donasi', `.donasi`],
   ['Audio', `.tikaudio ${args[0]}`]], m)
@@ -87,9 +87,9 @@ if (!args[0]) throw '\nSertakan link tiktoknya kak !\n\nContoh: .tiktok https://
     m.reply('Prosess...')
     const { author: { nickname }, video, description } = await tiktokdl(args[0]).catch(async _ => await tiktokdlv2(args[0])).catch(async _ => await tiktokdlv3(args[0]))
     const url = video.no_watermark || video.no_watermark2 || video.no_watermark_raw
-    let done = `PowerBy : ${nickname}\n⟡ ━━┄┄┄┈┈┈\nDescription:\n` + description
+    let done = `▣\n┆➵ Author : ${nickname}\n⟡ ━━┄┄┄┈┈┈\nDescription:\n` + description
     if (!url) throw 'Tidak dapat mengunduh video!'
-conn.sendHydrated2(m.chat, `Done @${m.sender.split(`@`)[0]}`, done, url, 'https://instagram.com/GlospotBotz', 'ɪ ɴ s ᴛ ᴀ ɢ ʀ ᴀ ᴍ', 'https://youtube.com/@GLOSPOTofficial', 'ʏ ᴏ ᴜ ᴛ ᴜ ʙ ᴇ', [['Donasi', `.donasi`], ['Audio', `.tikaudio ${args[0]}`]], m)
+conn.sendHydrated2(m.chat, `Done @${m.sender.split(`@`)[0]}`, done, url, 'https://instagram.com/al.0fficial_/', 'ɪ ɴ s ᴛ ᴀ ɢ ʀ ᴀ ᴍ', 'https://youtube.com/@aldiganzoffc', 'ʏ ᴏ ᴜ ᴛ ᴜ ʙ ᴇ', [['Donasi', `.donasi`], ['Audio', `.tikaudio ${args[0]}`]], m)
 } catch (e) {
 m.reply('Maaf fitur error, coba lagi beberapa saat')
 throw e
