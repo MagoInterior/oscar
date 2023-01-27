@@ -89,8 +89,8 @@ handler.tags = ['downloader', 'limitmenu']
 handler.command = /^play2?$/i
 
 handler.exp = 0
-handler.limit = true
-handler.register = false
+handler.limit = false
+handler.register = true
 
 export default handler
 
