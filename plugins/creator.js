@@ -10,48 +10,44 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 ✦ @${nomorown.split`@`[0]} ✦
 ------- ${nameown} -------
 
- • Indo  
- 📮*Note:*
-• Owner tidak menerima save contact
-• Owner berhak blockir tanpa alasan
-• Berbicaralah yang sopan & tidak spam
-• Owner Hanya merespon yang berkaitan dengan BOT
-• No Telp`
-
+🚀 *Note:*
+• Owner does not accept save contact
+• Owner has the right to be blocked without reason
+• Speak politely & don't spam
+• Owner Only responds related to BOT
+• No call`
 //------------ BIO
-let ppown = 'https://telegra.ph/file/f38f1ce61e1e674e20e94.jpg'
+let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *💌 Nama* : Glospot
-${htjava} *✉️ Nama YouTube* : Rismabotz offc
-${htjava} *♂️ Gender* : Boys
-${htjava} *🕋 Agama* : Islam
-${htjava} *⏰ Tanggal lahir* : 22 Desember xxxx 
-${htjava} *🎨 Umur* : ? 
-${htjava} *🧮 Kelas* : Pelajar 
-${htjava} *🧩 Hobby* : Nonton Bang windah, Chatting, Musik Lofi, 
-${htjava} *💬 Sifat* : Baik, No seleb, Y, Y, 
-${htjava} *🗺️ Tinggal* : Indo, Tulungagung, Jawa Timur
-${htjava} *❤️ Suka* : Kamu
-${htjava} *💔 Benci* : autis, seleb, 
+${htjava} *💌 Nama* : ♾𝙶𝙻𝙾𝚂𝙿𝙾𝚃
+${htjava} *✉️ Nama RL* : ℅℅℅℅
+${htjava} *♂️ Gender* : Lanang
+${htjava} *🕋 Agama* : ℅℅℅℅
+${htjava} *⏰ Tanggal lahir* : 9999
+${htjava} *🎨 Umur* : 999
+${htjava} *🧮 Kelas* : ℅℅℅℅
+${htjava} *🧩 Hobby* : ℅℅℅℅"
+${htjava} *💬 Sifat* : ℅℅℅℅
+${htjava} *🗺️ Tinggal* : Bumi
+${htjava} *❤️ Waifu* : -Loli
 
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
-${htjava} *🇫  ғᴀᴄᴇʙᴏᴏᴋ* : Jarot
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
 •·––––––––––––––––––––––––––·•
 `
-  let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
+  let teks = 'Pilih dibawah kak'
 const sections = [
    {
 	title: `${htjava} OWNER –––––––––·•`,
 	rows: [
-	    {title: "📱 • Nomor", rowId: ".owner nomor"},
+	{title: "📱 • Nomor Owner", rowId: ".owner nomor"},
+	{title: "📱 • Pengembang", rowId: ".kontak"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},
-	{title: "🌎 • Script", rowId: ".sc"},
 	]
     },{
 	title: `${htjava} SUPPORT ME –––––––·•`,
 	rows: [
-	    {title: "💹 • Donasi", rowId: ".owner nomor"},
+	    {title: "💹 • Donasi", rowId: ".donasi"},
 	{title: "🔖 • Sewa", rowId: ".sewa"},
 	{title: "🌟 • Buy Premium", rowId: ".premium"},
 	]
@@ -62,7 +58,7 @@ const listMessage = {
   text: teks,
   footer: null,
   title: `${htki} *OWNER* ${htka}`,
-  buttonText: "Click Here !",
+  buttonText: "Click Disini !",
   sections
 }
 
@@ -74,7 +70,12 @@ const listMessage = {
           conn.reply(m.chat, teksnomor, m, { contextInfo: { mentionedJid: [nowner] }})
             break
             case 'bio':
-          conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
+          //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
+
+          conn.sendButton(m.chat, teksbio, wm, ppown, [
+                ['Sewa Bot', `${usedPrefix}sewa`],
+                ['Menu', `${usedPrefix}menu`]
+            ], m)
             break
             
           default:
@@ -97,8 +98,8 @@ const listMessage = {
   }
 }
 
-handler.help = ['owner', 'creator']
+handler.help = ['owner','creator,kontak']
 handler.tags = ['main', 'info']
-handler.command = /^(owner|creator)/i
+handler.command = /^(owner|creator|kontak)/i
 
 export default handler
