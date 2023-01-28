@@ -48,7 +48,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/glospotbotz?igshid=YmMyMTA2M2Y=' //Link Instagrammu
+global.sig = 'https://instagram.com/GlospotBotz' //Link Instagrammu
 global.sgh = 'https://github.com/Glospot' //Link Githubmu
 global.sgc = 'https://chat.whatsapp.com/J6POxXuf46W49ro3aBnvaQ'
 global.sdc = 'https://instagram.com/glospotbotz?igshid=YmMyMTA2M2Y='
