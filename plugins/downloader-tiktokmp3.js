@@ -55,7 +55,7 @@ const time = moment.tz('Asia/Jakarta').format('HH')
                         description: 'anu',
                         title: `TIKTOK MP3 🎧`,
                         body: `GLOSPOT-MD`,                                       previewType: 0,
-                        thumbnail: await (await fetch(`https://telegra.ph/file/39f6922f421325d3f03e5.jpg`)).buffer(),
+                        thumbnail: await (await fetch(`https://telegra.ph/file/784a259faa8fe745109ff.jpg`)).buffer(),
                         sourceUrl: 'https://youtu.be/vkuqRDnjkwM'
             }
         }
