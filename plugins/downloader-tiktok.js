@@ -9,7 +9,7 @@ let name = await conn.getName(who)
   let res2 = await res.json()
   let x = res2.result
   await m.reply(`${global.wait}`)
-let cap = `${ucapan()}\n\nNih ${name}\nCara Simpan\n\n1. Download Dulu Vidio Nya Kalau Sudah\n2. Masuk Ke Dalam Vidio Nya\n3. Lalu Tekan Titik3 Pojok Kanan Atas\n4. Lalu Pilih Yang Ada Bacaan  Simpan\n4 Mau jadiin audio? Tag video ini dengan comand .tomp3\n\n♾𝙶𝙻𝙾𝚂𝙿𝙾𝚃 𝙱𝙾𝚃𝚉`
+let cap = `${ucapan()}\n\nNih ${name}\nCara Simpan\n\n1. Download Dulu Vidio Nya Kalau Sudah\n2. Masuk Ke Dalam Vidio Nya\n3. Lalu Tekan Titik3 Pojok Kanan Atas\n4. Lalu Pilih Yang Ada Bacaan  Simpan\n5. Mau jadiin audio? Tag video ini dengan comand .tomp3\n\n♾𝙶𝙻𝙾𝚂𝙿𝙾𝚃 𝙱𝙾𝚃𝚉`
 conn.sendFile(m.chat, x.link, 'tiktok.mp4', cap, m)
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
