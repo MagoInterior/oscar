@@ -15,7 +15,7 @@ conn.sendFile(m.chat, x.link, 'tiktok.mp4', cap, m)
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(tiktok|tt)$/i
-handler.limit = true
+handler.limit = false
 
 export default handler
 function ucapan() {
