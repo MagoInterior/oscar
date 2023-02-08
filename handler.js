@@ -678,14 +678,14 @@ export async function participantsUpdate({ id, participants, action }) {
                         let wel = API('males', '/welcome2', {
                                 profile: pp,
                                 username: await this.getName(user),
-                                background: 'https://telegra.ph/file/0b814069d86ee9a022da5.jpg',
+                                background: 'https://telegra.ph/file/29829bf1523a7c9f3eeb1.jpg',
                                 groupname: await this.getName(id),
                                 membercount: groupMetadata.participants.length
                             })
                             let lea = API('males', '/goodbye3', {
                                 profile: pp,
                                 username: await this.getName(user),
-                                background: 'https://telegra.ph/file/0db212539fe8a014017e3.jpg',
+                                background: 'https://telegra.ph/file/29829bf1523a7c9f3eeb1.jpg',
                                 groupname: await this.getName(id),
                                 membercount: groupMetadata.participants.length
                             })
