@@ -689,7 +689,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupname: await this.getName(id),
                                 membercount: groupMetadata.participants.length
                             })
-    conn.sendButtonDoc(id, text, wm, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'ImOscar', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    conn.sendButton(id, text, wm, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'ImOscar', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ",
     mediaType: 2, 
     description: "https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ", 
