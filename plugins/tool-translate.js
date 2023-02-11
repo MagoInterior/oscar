@@ -8,7 +8,7 @@ Contoh:
 ${usedPrefix + command} <lang> [text]
 ${usedPrefix + command} id your messages
 
-Daftar bahasa yang didukung: https://cloud.google.com/translate/docs/languages
+Daftar bahasa yang didukung: https://translation.googleapis.com/v3/projects/PROJECT_NUMBER_OR_ID/locations/LOCATION/supportedLanguages
 `.trim()
 
     let lang = args[0]
