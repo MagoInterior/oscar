@@ -16,7 +16,7 @@ import {
   watch
 } from 'fs';
 import yargs from 'yargs'
-import { spawn } from 'child_process'
+import { spawn, exec } from 'child_process'
 import lodash from 'lodash'
 import syntaxerror from 'syntax-error'
 import { tmpdir } from 'os'
@@ -118,7 +118,9 @@ function clearTmp() {
     return false
   })
 }
-
+setInterval( async () => {
+      await exec("rm -rf ./tmp/*")
+}, 1000 * 60 * 30 )
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
   if (isNewLogin) conn.isInit = true
